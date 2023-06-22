@@ -11,6 +11,22 @@
 # solution('THE WIND IN THE WILLOWS', 'The In'),'The Wind in the Willows'
 
 
-def solution(a_string, minor words):
-    split_string - a_string.split(" ")
-    for word in 
+def solution(a_string, minor_words):
+    split_string = a_string.split(" ")
+
+    new_list = []
+    new_list.append(split_string[0].capitalize())
+    #print(split_string)
+
+    for word in split_string[1:]:
+        if word.lower() not in minor_words.lower().split(" "):
+            word = word.capitalize()
+            new_list.append(word)
+        #print(word)
+        else:
+            new_list.append(word)
+
+    #print(new_list)
+    return " ".join(new_list)
+
+print(solution("thank goodness it is friday today","it is"))
