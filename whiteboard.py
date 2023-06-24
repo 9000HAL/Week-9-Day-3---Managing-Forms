@@ -30,3 +30,15 @@ def solution(a_string, minor_words):
     return " ".join(new_list)
 
 print(solution("thank goodness it is friday today","it is"))
+
+
+
+
+
+
+
+
+#gabe re-create whiteboard:
+
+
+
